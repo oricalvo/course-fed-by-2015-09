@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        runManyTasks();
+
+        function runManyTasks() {
+            for (var i = 0; i < 10; i++) {
+                (function (i) {
+                    runTask(function () {
+                        console.log("Task " + i + " completed");
+                    });
+                })(i);
+            }
+        }
+
+        function runTask(callback) {
+            setTimeout(function () {
+                callback();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

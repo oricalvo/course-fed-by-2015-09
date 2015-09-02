@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        function Counter() {
+            var value = 0;
+
+            function inc() {
+                ++value;
+            }
+
+            function dec() {
+                --value;
+            }
+
+            function get() {
+                return value;
+            }
+
+            return {
+                inc: inc,
+                dec: dec,
+                get: get,
+            };
+        }
+
+        var c1 = new Counter();
+        c1.inc();
+
+        var c2 = new Counter();
+        c2.inc();
+        c2.dec();
+
+        console.log(c1.get());
+        console.log(c2.get());
+    </script>
+</body>
+</html>
