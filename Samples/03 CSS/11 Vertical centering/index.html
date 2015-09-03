@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .parent {
+            background-color: red;
+            width: 10em;
+            height: 10em;
+            display: inline-block;
+            text-align: center;
+        }
+
+            .parent::before {
+                height: 100%;
+                content: '';
+                background-color: yellow;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+        .child {
+            background-color: blue;
+            width: 5em;
+            height: 5em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
