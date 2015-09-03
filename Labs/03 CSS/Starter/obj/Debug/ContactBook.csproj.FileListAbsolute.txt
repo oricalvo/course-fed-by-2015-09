@@ -1,0 +1,12 @@
+C:\BY\FED\course-fed-by-2015-09\Labs\02 OOP\Starter\bin\ContactBook.dll.config
+C:\BY\FED\course-fed-by-2015-09\Labs\02 OOP\Starter\bin\ContactBook.dll
+C:\BY\FED\course-fed-by-2015-09\Labs\02 OOP\Starter\bin\ContactBook.pdb
+C:\BY\FED\course-fed-by-2015-09\Labs\02 OOP\Starter\obj\Debug\ContactBook.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Labs\02 OOP\Starter\obj\Debug\ContactBook.dll
+C:\BY\FED\course-fed-by-2015-09\Labs\02 OOP\Starter\obj\Debug\ContactBook.pdb
+C:\BY\FED\course-fed-by-2015-09\Labs\03 CSS\Starter\bin\ContactBook.dll.config
+C:\BY\FED\course-fed-by-2015-09\Labs\03 CSS\Starter\bin\ContactBook.dll
+C:\BY\FED\course-fed-by-2015-09\Labs\03 CSS\Starter\bin\ContactBook.pdb
+C:\BY\FED\course-fed-by-2015-09\Labs\03 CSS\Starter\obj\Debug\ContactBook.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Labs\03 CSS\Starter\obj\Debug\ContactBook.dll
+C:\BY\FED\course-fed-by-2015-09\Labs\03 CSS\Starter\obj\Debug\ContactBook.pdb
