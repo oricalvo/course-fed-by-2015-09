@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .label {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" checked="blabla" />
+    <button>Click me</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                console.log($("input[type=checkbox]").attr("checked"));
+                console.log($("input[type=checkbox]").prop("checked"));
+            });
+        });
+    </script>
+</body>
+</html>

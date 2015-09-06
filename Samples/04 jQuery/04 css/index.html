@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .label {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <span>Hello jQuery</span>
+    <button>Click me</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            //$("button").css("color", "red");
+
+            $("button").click(function () {
+                $("span").toggleClass("label");
+            });
+        });
+    </script>
+</body>
+</html>

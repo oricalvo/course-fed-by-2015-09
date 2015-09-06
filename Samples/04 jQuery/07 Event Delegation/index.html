@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="id">1</td>
+            <td class="name">Ori</td>
+        </tr>
+
+        <tr>
+            <td class="id">2</td>
+            <td class="name">Roni</td>
+        </tr>
+    </table>
+
+    <button>Add Row</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            //$("button").bind("click", function () {
+            //    console.log("Clicked");
+            //});
+
+            //$("button").on("click", function () {
+            //    console.log("Clicked");
+            //});
+
+            //$("tr").on("click", function () {
+            //    console.log($(this).find("td.name").text());
+            //});
+
+            //$("table").on("click", function (e) {
+            //    var tr = $(e.target).closest("tr");
+            //    console.log(tr.find("td.name").text());
+            //});
+
+            $("table").on("click", "tr", function () {
+                console.log($(this).find("td.name").text());
+            });
+
+            $("button").click(function () {
+                var tr = $("<tr><td class='id'>3</td><td class='name'>Udi</td></tr>");
+                $("table").append(tr);
+            });
+        });
+    </script>
+</body>
+</html>

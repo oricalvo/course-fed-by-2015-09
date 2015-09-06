@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="view">
+        <button>Click me</button>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        function View(element) {
+            var me = this;
+
+            me.element = element;
+            me.button = me.element.find("button");
+            me.button.click(function () {
+                me.onButtonClicked();
+            });
+        }
+
+        View.prototype.onButtonClicked = function () {
+            console.log(!!this.button);
+        }
+
+        $(function () {
+            new View($("div.view"));
+        });
+    </script>
+</body>
+</html>
