@@ -1,4 +1,12 @@
-﻿/// <reference path="BookItem.js" />
+﻿////var header = document.getElementById("header");
+////header.innerHTML = "ABC";
+
+//var button = document.getElementById("button1");
+//button.attachEvent()
+
+//button.addEventListener(
+
+/// <reference path="BookItem.js" />
 
 var ContactBook = ContactBook || {};
 
