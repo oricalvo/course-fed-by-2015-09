@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Contact Book</title>
+    <link href="Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div>
+        <div class="site-menu header">
+            <span class="title">
+                Contact Book
+            </span>
+
+            <div class="menu">
+                <span class="add-contact">
+                    New Contact
+                </span>
+                <span class="add-group">
+                    New Group
+                </span>
+            </div>
+        </div>
+
+        <div class="content">
+            <ul class="items-view view"></ul>
+
+            <div class="contact-new-view view">
+                <h1>New Contact</h1>
+
+                <div class="field name">
+                    <div>
+                        Name:
+                    </div>
+                    <div>
+                        <input />
+                    </div>
+                </div>
+
+                <div class="field email">
+                    <div>
+                        E-Mail:
+                    </div>
+                    <div>
+                        <input />
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button>Add</button>
+                </div>
+
+                <div class="error-message">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span class="copyright">&copy; 2012 Contact Book</span>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    
+    <script src="BookItem.js"></script>
+    <script src="Contact.js"></script>
+    <script src="Group.js"></script>
+    <script src="BookStorage.js"></script>
+    <script src="Book.js"></script>
+
+    <script src="App.js"></script>
+
+    <script src="SiteMenu.js"></script>
+    <script src="ItemsView.js"></script>
+    <script src="ContactNewView.js"></script>    
+</body>
+</html>
