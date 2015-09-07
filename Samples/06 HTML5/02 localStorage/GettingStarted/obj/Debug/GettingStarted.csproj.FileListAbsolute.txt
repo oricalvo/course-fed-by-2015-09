@@ -1,0 +1,18 @@
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\GettingStarted\GettingStarted\bin\GettingStarted.dll.config
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\GettingStarted\GettingStarted\bin\GettingStarted.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\GettingStarted\GettingStarted\bin\GettingStarted.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\GettingStarted\GettingStarted\obj\Debug\GettingStarted.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\GettingStarted\GettingStarted\obj\Debug\GettingStarted.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\GettingStarted\GettingStarted\obj\Debug\GettingStarted.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\01 History API\GettingStarted\bin\GettingStarted.dll.config
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\01 History API\GettingStarted\bin\GettingStarted.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\01 History API\GettingStarted\bin\GettingStarted.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\01 History API\GettingStarted\obj\Debug\GettingStarted.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\01 History API\GettingStarted\obj\Debug\GettingStarted.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\01 History API\GettingStarted\obj\Debug\GettingStarted.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\02 localStorage\GettingStarted\bin\GettingStarted.dll.config
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\02 localStorage\GettingStarted\bin\GettingStarted.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\02 localStorage\GettingStarted\bin\GettingStarted.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\02 localStorage\GettingStarted\obj\Debug\GettingStarted.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\02 localStorage\GettingStarted\obj\Debug\GettingStarted.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\02 localStorage\GettingStarted\obj\Debug\GettingStarted.pdb

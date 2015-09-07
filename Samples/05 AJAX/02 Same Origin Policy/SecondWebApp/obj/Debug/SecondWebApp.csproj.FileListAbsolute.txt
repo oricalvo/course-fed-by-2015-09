@@ -1,0 +1,6 @@
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\02 Same Origin Policy\SecondWebApp\bin\SecondWebApp.dll.config
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\02 Same Origin Policy\SecondWebApp\bin\SecondWebApp.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\02 Same Origin Policy\SecondWebApp\bin\SecondWebApp.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\02 Same Origin Policy\SecondWebApp\obj\Debug\SecondWebApp.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\02 Same Origin Policy\SecondWebApp\obj\Debug\SecondWebApp.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\05 AJAX\02 Same Origin Policy\SecondWebApp\obj\Debug\SecondWebApp.pdb

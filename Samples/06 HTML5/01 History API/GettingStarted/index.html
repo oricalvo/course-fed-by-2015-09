@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 class="title">Home</h1>
+
+    <button>Change URL</button>
+
+    <script src="jquery.js"></script>
+
+    <script>
+
+        function HistoryEntry() {
+            this.id = 123;
+            this.name = "state1";
+        }
+
+        HistoryEntry.prototype.dump = function () {
+            console.log(this.id + ", " + this.name);
+        }
+
+        $("button").click(function () {
+            history.pushState(new HistoryEntry(), null, "/about");
+
+            $("h1").text("About");
+        });
+
+        //window.addEventListener("popstate", function (e) {
+        //    console.log("POPSTATE:" + e.state);
+        //});
+
+        $(window).on("popstate", function (e) {
+            console.log("POPSTATE:" + e.originalEvent.state);
+
+            var state = e.originalEvent.state;
+            if (state) {
+                $("h1").text("About");
+
+                state.dump();
+            }
+            else {
+                $("h1").text("Home");
+            }
+        });
+    </script>
+</body>
+</html>

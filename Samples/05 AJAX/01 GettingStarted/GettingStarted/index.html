@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button class="get">Get Data</button>
+    <button class="send">Send Data</button>
+
+    <script src="jquery.js"></script>
+    <script>
+        $("button.get").click(function () {
+            getData();
+        });
+
+        $("button.send").click(function () {
+            sendData();
+        });
+
+        function sendData() {
+            var contact = {
+                id: -1,
+                name: "XXX",
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/api/contact",
+                data: JSON.stringify(contact),
+                contentType: "application/json",
+                success: function (json) {
+                    console.log("SUCCESS");
+                },
+                error: function (err) {
+                    console.log("ERROR");
+                }
+            });
+        }
+
+        function getData() {
+            $.ajax({
+                type: "GET",
+                url: "contacts.html",
+                dataType: "json",
+                success: function (json) {
+                    console.log(json);
+
+                    //var contacts = JSON.parse(json);
+                    //contacts.forEach(function (contact) {
+                    //    console.log(contact.ID + ", " + contact.Name);
+                    //});
+                },
+                error: function (err) {
+                    console.log("ERROR");
+                }
+            });
+        }
+
+        function retrieveXmlAndParse() {
+            $.ajax({
+                type: "GET",
+                url: "contacts.xml",
+                success: function (res) {
+                    //console.log(res);
+                    var element = $(res);
+                    element.find("Name").each(function () {
+                        console.log($(this).text());
+                    });
+                },
+                error: function (err) {
+                    console.log("ERROR");
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

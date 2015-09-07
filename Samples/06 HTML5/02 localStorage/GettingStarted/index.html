@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 class="title">Local Storage</h1>
+
+    <span></span>
+    <button>Inc</button>
+
+    <script src="jquery.js"></script>
+
+    <script>
+        var data = (localStorage.getItem("data") * 1) || 0;
+
+        updateUI();
+
+        $("button").click(function () {
+            ++data;
+
+            localStorage.setItem("data", data);
+
+            updateUI();
+        });
+
+        function updateUI() {
+            $("span").text(data);
+        }
+    </script>
+</body>
+</html>

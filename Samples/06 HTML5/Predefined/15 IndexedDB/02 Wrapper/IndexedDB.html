@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Indexed DB</title>
+
+    <script src="jquery.js"></script>
+    <script src="q.js"></script>
+    <script src="SimpleIndexedDB.js"></script>
+</head>
+<body>
+    <button class="openDB">Open DB</button>
+    <button class="closeDB">Close DB</button>
+    <button class="deleteDB">Delete DB</button>
+    <button class="addData">Add Data</button>
+
+    <script>
+        (function () {
+            var db = new SimpleIndexedDB();
+
+            $(".openDB").click(function () {
+                console.log("Openning DB");
+
+                db.upgradeNeeded.add(function (db) {
+                        if (db.version == 1) {
+                            console.log("        Creating object store: contacts");
+                            var objectStore = db.createObjectStore("contacts", { keyPath: "id" });
+
+                            console.log("        Creating index: name");
+                            objectStore.createIndex("name", "name", { unique: false });
+
+                            console.log("        Creating index: email");
+                            objectStore.createIndex("email", "email", { unique: true });
+                        }
+                    });
+
+                db.open("MyDB")
+                    .then(function () {
+                        console.log("    onsuccess");
+                    })
+                    .fail(function () {
+                        console.log("    onerror");
+                    });
+            });
+
+            $(".closeDB").click(function () {
+                console.log("Closing DB");
+
+                db.close();
+
+                console.log("    done");
+            });
+
+            $(".deleteDB").click(function () {
+                console.log("Deleting DB");
+
+                var request = indexedDB.deleteDatabase("MyDB");
+
+                //
+                //  delete request is not completed until all opened connections are closed
+                //
+                request.onsuccess = function () {
+                    console.log("    onsuccess");
+                }
+
+                request.onerror = function () {
+                    console.log("    onerror");
+                }
+            });
+
+            $(".addData").click(function () {
+                console.log("Adding data");
+
+                var tran = db.transaction(["contacts"], "readwrite");
+
+                tran.open()
+                    .then(function () {
+                        console.log("    tran oncomplete");
+                    })
+                    .fail(function () {
+                        console.log("    tran onerror");
+                    });
+
+                tran.add("contacts", {
+                        id: 1,
+                        name: "Ori",
+                        email: "ori@gmail.com",
+                    })
+                    .then(function () {
+                        console.log("    add onsuccess");
+                    })
+                    .fail(function () {
+                        console.log("    add onerror");
+                    });
+            });
+
+            $(".getSingleData").click(function () {
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 class="title">Home</h1>
+
+    <button>Enable Notification</button>
+
+    <script src="jquery.js"></script>
+
+    <script>
+
+        $("button").click(function () {
+            // Let's check if the browser supports notifications
+            if (!("Notification" in window)) {
+                alert("This browser does not support desktop notification");
+
+                return;
+            }
+
+            // Let's check whether notification permissions have already been granted
+            if (Notification.permission === "granted") {
+                displayNotification();
+            }
+            else if (Notification.permission !== 'denied') {
+                Notification.requestPermission(function (permission) {
+                    if (permission === "granted") {
+                        displayNotification();
+                    }
+                });
+            }
+        });
+
+        function displayNotification() {
+            var notification = new Notification("Hi there!");
+
+            notification.onclick = function () {
+                window.focus();
+            }
+        }
+    </script>
+</body>
+</html>
