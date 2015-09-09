@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ticTacToeApp">
+<head>
+    <title></title>
+
+    <link href="Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="GameCtrl as ctrl" class="board-view">
+
+        <div class="board">
+            <div ng-repeat="row in ctrl.rows" class="row">
+                <div ng-repeat="cell in row" class="cell" ng-click="ctrl.cellClicked(cell)">
+                    <span>{{cell.value}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button ng-click="ctrl.newGame()">New Game</button>
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+
+    <script src="Event.js"></script>
+
+    <script src="App.js"></script>
+
+    <script src="GameService.js"></script>
+    <script src="GameCtrl.js"></script>
+</body>
+</html>
