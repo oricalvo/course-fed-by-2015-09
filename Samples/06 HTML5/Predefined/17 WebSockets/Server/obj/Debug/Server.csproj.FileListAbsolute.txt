@@ -1,6 +1,0 @@
-C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Server\bin\Debug\ConsoleApp.exe
-C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Server\bin\Debug\ConsoleApp.pdb
-C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Server\bin\Debug\Fleck.dll
-C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
-C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Server\obj\Debug\ConsoleApp.exe
-C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Server\obj\Debug\ConsoleApp.pdb

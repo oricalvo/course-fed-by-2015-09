@@ -1,6 +1,0 @@
-C:\BY\FED\course-fed-by-2015-09\Samples\07 Angular\GettingStarted\GettingStarted\bin\GettingStarted.dll.config
-C:\BY\FED\course-fed-by-2015-09\Samples\07 Angular\GettingStarted\GettingStarted\bin\GettingStarted.dll
-C:\BY\FED\course-fed-by-2015-09\Samples\07 Angular\GettingStarted\GettingStarted\bin\GettingStarted.pdb
-C:\BY\FED\course-fed-by-2015-09\Samples\07 Angular\GettingStarted\GettingStarted\obj\Debug\GettingStarted.csprojResolveAssemblyReference.cache
-C:\BY\FED\course-fed-by-2015-09\Samples\07 Angular\GettingStarted\GettingStarted\obj\Debug\GettingStarted.dll
-C:\BY\FED\course-fed-by-2015-09\Samples\07 Angular\GettingStarted\GettingStarted\obj\Debug\GettingStarted.pdb
