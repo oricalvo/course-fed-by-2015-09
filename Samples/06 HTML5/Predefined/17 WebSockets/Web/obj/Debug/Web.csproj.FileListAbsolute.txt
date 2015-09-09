@@ -1,0 +1,6 @@
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Web\bin\UsingWebSockets.dll.config
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Web\bin\UsingWebSockets.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Web\bin\UsingWebSockets.pdb
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Web\obj\Debug\UsingWebSockets.dll
+C:\BY\FED\course-fed-by-2015-09\Samples\06 HTML5\Predefined\17 WebSockets\Web\obj\Debug\UsingWebSockets.pdb

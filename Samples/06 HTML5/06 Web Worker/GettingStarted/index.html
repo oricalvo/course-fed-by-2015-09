@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input />
+    <button>Calc</button>
+    <span></span>
+
+    <script src="jquery.js"></script>
+
+    <script>
+
+        $("button").click(function () {
+            var worker = new Worker("/Fib.js");
+
+            worker.addEventListener("message", function (e) {
+                var res = e.data;
+
+                $("span").text(res);
+            });
+
+            var index = $("input").val();
+
+            worker.postMessage(index);
+
+            //var res = fib(index);
+
+        });
+    </script>
+</body>
+</html>

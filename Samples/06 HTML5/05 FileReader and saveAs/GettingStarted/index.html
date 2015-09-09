@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        input[type=file] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" />
+
+    <button>Browse ...</button>
+
+    <script src="jquery.js"></script>
+    <script src="FileSaver.js"></script>
+
+    <script>
+        var input = $("input[type=file]");
+
+        input.on("change", function (e) {
+            var file = input[0].files[0];
+            console.log("CHANGE: " + file.name);
+
+            input[0].value = "";
+
+            var fileReader = new FileReader();
+            fileReader.readAsText(file);
+
+            fileReader.onload = function (e) {
+                var text = e.target.result;
+
+                var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+                saveAs(blob, "hello world.txt");
+            }
+        });
+
+        $("button").click(function () {
+            input.trigger("click");
+        });
+    </script>
+</body>
+</html>

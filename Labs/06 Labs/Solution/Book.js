@@ -14,23 +14,19 @@ ContactBook.book = (function (bookStorage) {
     }
 
     Book.prototype.load = function (success, error) {
-        this.root = bookStorage.load() || new Group("~");
+        var me = this;
 
-        success();
+        bookStorage.load(
+            function (root) {
+                me.root = root;
 
-        //$.ajax({
-        //    type: "GET",
-        //    url: "book.html",
-        //    dataType: "json",
-        //    success: function (dto) {
-        //        me.root = bookStorage.deserialize(dto);
+                success();
+            },
+            function (err) {
+                me.root = new Group("~");
 
-        //        success();
-        //    },
-        //    error: function () {
-        //        error(new Error("Failed to load data from server"));
-        //    }
-        //});
+                error(err);
+            });
     }
 
     var book = new Book();

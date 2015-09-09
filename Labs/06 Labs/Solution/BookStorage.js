@@ -13,10 +13,16 @@ ContactBook.bookStorage = (function (Group, Contact) {
         localStorage.setItem("book", json);
     }
 
-    BookStorage.prototype.load = function () {
-        var json = localStorage.getItem("book");
-        if (json) {
-            return this.deserialize(JSON.parse(json));
+    BookStorage.prototype.load = function (success, error) {
+        try {
+            var json = localStorage.getItem("book");
+            if (json) {
+                var root = this.deserialize(JSON.parse(json));
+                success(root);
+            }
+        }
+        catch (err) {
+            error(err);
         }
     }
 
